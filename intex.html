@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pixel HTML Academy – learn HTML free</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bar"></div>
+<canvas id="sprite" width="8" height="8" aria-hidden="true"></canvas>
+<nav><span class="logo px">PIXEL HTML</span><div><a href="#how">How it works</a><a class="keep" href="#app">Start learning</a></div></nav>
+
+<section id="hero">
+  <div class="cloud" data-s=".25" style="top:18%;left:8%;width:12px;height:12px"></div>
+  <div class="cloud" data-s=".5" style="top:38%;left:62%;width:12px;height:12px"></div>
+  <div class="cloud" data-s=".35" style="top:62%;left:28%;width:12px;height:12px"></div>
+  <div class="wrap">
+    <h1>Learn HTML.<br>One pixel at a time.</h1>
+    <p>Free, no sign-up. Type real code, see it come alive, and level up through fifteen lessons, from basic to advanced.</p>
+    <a href="#app"><button class="btn">Start level 1</button></a>
+  </div>
+  <div class="ground"></div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="box"><h3>Read</h3><p>Each lesson explains one HTML tag in a few short lines.</p></div>
+      <div class="box"><h3>Type</h3><p>Edit the code in the editor. The preview updates as you type.</p></div>
+      <div class="box"><h3>Check</h3><p>Press Check code. Get a star when your code does the job.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="app">
+  <div class="wrap">
+    <h2>Learn HTML free</h2>
+    <p class="score" id="score">Stars: 0 / 15</p>
+    <div class="app">
+      <ul class="lessons" id="list"></ul>
+      <div class="box work">
+        <h3 id="ttl"></h3>
+        <p id="txt"></p>
+        <div class="panes">
+          <div><p class="label">Your code</p><textarea id="code" spellcheck="false" aria-label="HTML code editor"></textarea></div>
+          <div><p class="label">Preview</p><iframe id="prev" title="Preview" sandbox></iframe></div>
+        </div>
+        <p style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap">
+          <button class="btn" id="chk">Check code</button>
+          <button class="btn alt" id="rst">Reset</button>
+          <button class="btn alt" id="nxt" hidden>Next lesson</button>
+        </p>
+        <p id="msg" role="status"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><p class="px" style="font-size:11px;color:var(--sun);max-width:none">GAME OVER? NO. KEEP BUILDING.</p><p style="max-width:none;margin:0">Pixel HTML Academy · free to use</p></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
